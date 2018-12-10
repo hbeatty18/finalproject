@@ -1,0 +1,153 @@
+
+
+.carousel-inner img {
+  height: auto;
+  margin: 0 auto;
+}
+
+body {
+background-color: #007A7C;
+padding: 2em;
+margin: 0;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.head {
+  font-family:"Montserrat", serif;
+}
+
+.beg{
+  background-color: #FFFACD;
+}
+
+p:not(.card-text):not(.footer):not(.art) {
+  font-family: "Noto Serif SC", serif;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.button {
+  font-family: "Noto Serif SC", serif;
+  font-size: 1em;
+}
+
+.submit {
+  font-family: "Noto Serif SC", serif;
+  font-size: 1em;
+}
+
+.reset {
+  font-family: "Noto Serif SC", serif;
+  font-size: 1em;
+}
+
+button {
+  font-size: 1em;
+}
+
+.nea_words, .aae_words, .grants_words, .highcharts {
+  background-color:#4AE08C;
+}
+
+.art-quiz {
+  margin: auto;
+  background-color: #AA5535;
+  color: #000000;
+  font-family: "Noto Serif SC", serif;
+  padding: 2em;
+  font-size: 2em;
+}
+
+.answers {
+  margin: 2em;
+  background-color: #36D7B7;
+  color: #000000;
+}
+
+.card2 {
+  background-color:#007A7C;
+  color: #000000;
+  padding: 1em;
+  margin:2em;
+  font-family: "Noto Serif SC", serif;
+  font-size: 1.5em;
+}
+
+.card-deck {
+  margin: 0;
+  display: flex;
+}
+
+
+#container {
+  min-width: 310px;
+  height: 400px;
+  margin:0 auto;
+  font-family: "Noto Serif SC", serif;
+
+}
+
+.card-deck {
+  justify-content: center;
+}
+.credits {
+    font-family: "Noto Serif SC", serif;
+    font-size:1em;
+    display: inline-flex;
+}
+
+.image_credits {
+    font-family: "Noto Serif SC", serif;
+    font-size:1em;
+    background-color:#D5D5D5;
+}
+
+.resp {
+  max-width: 70ch;
+  margin: 2em auto;
+  width: 150em;
+}
+
+.footer {
+  background-color: #7462E0;
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  font-family: "Noto Serif SC", serif;
+  color: #000000;
+}
+
+@media screen and (max-width:1000px) {
+  .resp {
+    margin: 2em;
+    padding: 2em;
+    font-size: 1em;
+  }
+
+  #song {
+  max-width: 100%;
+  }
+
+  .card-deck {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .resp {
+    margin: 1em;
+    padding: 1em;
+    font-size: .5em;
+  }
+
+  #song {
+  max-width: 100%;
+  }
+
+  .card-deck {
+    display: grid;
+  }
+}

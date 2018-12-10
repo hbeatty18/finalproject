@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Final Project </title>
+<link rel="stylesheet" type="text/css" href="styles/finalproject.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif+SC|Reenie+Beanie" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+</head>
+
+<body>
+
+<div class="carousel-container">
+  <div id="art-carousel" class="carousel slide" data-interval="6500" data-ride="carousel">
+
+<ol class="carousel-indicators">
+  <li data-target="#art-carousel" data-slide-to="0" class="active"></li>
+  <li data-target="#art-carousel" data-slide-to="1"></li>
+  <li data-target="#art-carousel" data-slide-to="2"></li>
+</ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="d-block w-100" src="images/finalcarousel1.jpg" alt="abstract painting">
+    </div>
+
+
+  <div class="item">
+    <img class= "d-block w-100" src="images/carousel2final.jpg"  alt="record player">
+  </div>
+
+  <div class="item">
+    <img class= "d-block w-100" src="images/finalcarousel3.jpg" alt="ancient theatre">
+   </div>
+ </div>
+
+ <a class="left carousel-control" href="#art-carousel" role="button" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#art-carousel" role="button" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+
+</div>
+</div>
+<br>
+<div class="resp">
+<p class="beg"> Past victories, defeats and conquests, the arts are the durable surviving artifacts of a society. The arts can be liberating, controversial, beautiful, challenging and unifying. Dance, art, music and theatre have evolved over thousands of years to reflect vast ideologies, histories and identities. The evolution of art is a prime example of the tangible expression of philosophy as postmodern art has soared in popularity in the past twenty years. Beyond the sociological consequences and precedents, the arts also add emotional layers to our lives.  We can all identify a piece of music that lifts us when we’re feeling down. While the genre might differ, we can agree that songs are rehabilitative. </p>
+
+<p class="beg"> The implementation of arts in education produces astounding benefits to childhood development. <a href="https://www.edweek.org/ew/articles/2014/12/03/13greene.h34.html"> According to Education Week,</a>  arts education improves cultural awareness, critical thinking and empathy. <a href="https://www.artsedsearch.org/study/arts-education-in-secondary-schools-effects-and-effectiveness/"> A 2000 study in the UK</a>  studied the effect of arts education in secondary schools and found that arts education positively influenced students’ communication, teamwork and self-confidence. In President Obama's Every Student Succeeds law, the arts and music were defined as components of a "well-rounded" education. This classification allowed both sectors to be eligible for Title I funds. Title I is a financial allocation for grants that service low-income populations.</p>
+
+  <p class="beg"> While arts education has tremendous effects on child development, the funding of the arts is constantly perilous in America. A 2018 study by <a href="https://www.americansforthearts.org/sites/default/files/Public%20Opinion%20National%202018%20Report.pdf">Americans for the Arts</a> found that 91 perecent of Americans believe that the arts are a part of a well-rounded K-12 eduation. However, as reported by the <a href="https://www.washingtonpost.com/news/arts-and-entertainment/wp/2018/02/12/trumps-budget-eliminates-nea-public-tv-and-other-cultural-agencies-again/?utm_term=.bae19e698613">Washington Post,</a> President Donald Trump's 2019 fiscal year budget proposed cutting the National Endowment for the Arts, a large funder of arts education, by almost 80 percent. </p>
+
+<div class="art-quiz">
+<h1 class="head"> Are You Art Smart? </h1>
+<p class="art"> How does your arts knowledge measure up? Take this quiz to find out how much you know about general fine art, dance, music and theatre knowledge. </p>
+<br>
+    <form>
+      <div class="form-row">
+      <div class="form-row align-items-center">
+          <img src="images/sunflowers.jpg" alt="Painting of Sunflowers">
+        <label class="form-control-label">Who painted this artwork?</label>
+        <input type="text" name="artist" id="artist"
+        class="form-control-sm">
+      </div>
+    </div>
+<br>
+    <div class="form-check form-row align-items-center">
+      <audio id="song" controls preload="auto">
+        <source src="audio/myfavorite.mp3" type="audio/mp3">
+          <source src="audio/myfavorite.ogg" type="audio/ogg">
+            <p>Listen Again</p>
+          <ul>
+            <li><a href="audio/myfavorite.mp3">MP3</a></li>
+            <li><a href="audio/myfavorite.ogg">Ogg Vorbis</a></li>
+          </ul>
+        </audio>
+      <label class="d-block">Which musical is this song from?
+        <select name="musical" id="musical">
+          <option value="Show_Boat">Show Boat</option>
+          <option value="The_Music_Man">The Music Man</option>
+          <option value="Carousel">Carousel</option>
+          <option value="The_Sound_of_Music">The Sound of Music</option>
+        </select>
+      </label>
+    </div>
+<br>
+      <div class="form-check form-row align-items-center">
+          <img src="images/finalpointe.jpg" alt="Dancer En Pointe">
+        <label class="d-block">Which dances are performed en pointe?</label>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label"><input type="checkbox" name="pointe" value="The_Nutcracker" checked>The Nutcracker</label>
+          <label class="form-check-label"><input type="checkbox" name="pointe" value="Don_Quixote" checked>Don Quixote</label>
+          <label class="form-check-label"><input type="checkbox" name="pointe" value="Samba" checked>Samba</label>
+          <label class="form-check-label"><input type="checkbox" name="pointe" value="Paso_Doble">Paso Doble</label>
+          <label class="form-check-label"><input type="checkbox" name="pointe" value="Giselle" checked>Giselle</label>
+        </div>
+      </div>
+
+<br>
+        <div class="form-check form-row align-items-center">
+            <img src="images/finalbeethoven.jpg" alt="Beethoven">
+          <label class="d-block">Which of the following is a work by Beethoven?</label>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label"><input type="radio" name="music" value="Resurrection" checked>Resurrection</label>
+              <label class="form-check-label"><input type="radio" name="music" value="Pathetique" checked>Pathetique</label>
+              <label class="form-check-label"><input type="radio" name="music" value="The_Marriage_of_Figaro" checked>The Marriage of Figaro</label>
+              <label class="form-check-label"><input type="radio" name="music" value="Fur_Elise" checked>Fur Elise</label>
+            </div>
+          </div>
+<br>
+        <input type="submit" value="Action" class="submit">
+        <input type="reset" value="Once More" class="submit">
+        <button type="button" class="button">Show Me the Answers</button>
+      </form>
+</div>
+
+<div class="answers">
+  <p> 1). Van Gogh 2). The Sound of Music 3). The Nutcracker, Don Quixote and Giselle 4). Fur Elise </p>
+</div>
+
+<h1 class="head"> The Price of Admission </h1>
+<p> Arts education funding comes from three main places: the National Endowment for the Arts, Assistance for Arts Education and private grants. Click each button to read more about the respective fund and its strength over the years <p>
+  <button type="button" class="nea"> National Endowment for the Arts</button>
+  <button type="button" class="aae">Assistance for Arts Education</button>
+  <button type="button" class="grants"> Grants</button>
+  <button type="button" class="charts">Southern Arts Education Funding</button>
+
+  <div class="nea_words">
+    <p> <a href="https://www.arts.gov">The National Endowment for the Arts</a> was founded in 1965 by Congress as an independent agency. It strives to bring arts to Americans across all walks of life and set the standard for arts education. The President appoints the Chairperson to a four-year tenure, which must be approved by Congress. From 1966 to 2016, the NEA contributed $238.6 million in grants to arts education programs. In 2018 fiscal year alone, the NEA endowed $5.3 million to arts education programs. </p>
+  </div>
+
+  <div class="aae_words">
+    <p> <a href="https://www.law.cornell.edu/uscode/text/20/7292">Assistance for Arts Education</a> was established in 2015 as a part of President Obama's <a href="https://www.ed.gov/essa"> Every Student Succeeds Act (ESSA)</a>. Signed into law on Dec. 10, 2015, ESSA replaced many No Child Left Behind policies. Assistance for Arts Education is a grant program for school and community-based arts education programs. In 2018, the AAE awarded $12 million in grants. </p>
+  </div>
+
+  <div class="grants_words">
+    <p> Donations by private citizens and foundations are anchors of support for arts education. Typically for private grants, the applying agency must submit a proposal and must be reviewed by a non-biased counsel. Grants must be renewed and reviewed on a regular basis depending on the financial cycle of the giving body. A study by <a href="https://www.giarts.org/sites/default/files/29-1-vital-signs.pdf">Grantmakers in the Arts</a> found that in 2015, $99.2 million was given in private grants for arts education. </p>
+  </div>
+
+  <div class="highcharts">
+    <p>In 2014, <a href="https://www.southarts.org/wp-content/uploads/Arts-Education-in-the-South-Phase-I-Full-Report.pdf">South Arts,</a> a non-profit arts organization, released a comprehensive study on arts education in the South. This multi-dimensional study analyzed: Alabama, Florida, Georgia, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina and Tennessee. The chart below will summarize where schools in these respective states receive funding. The study overarchingly found that 73 percent of principals indicated budget constraints as a primary obstacle to providing arts education. </p>
+    <p> The following charts display the five main places where schools in the study indicated they got their money: PTA/PTO, district, school budget, arts fundraisers and individual donations. Three charts recognize trends in elementary schools, middle schools and high schools. There were other variables in the study, but were less chosen and more niche to the state than national trends for funding resources demonstrate.
+    </p>
+    <div id="container">
+    </div>
+    <script>
+    Highcharts.chart('container', {
+  chart: {
+    type: 'column'
+  },
+  title: {
+    text: 'Main Sources of Arts Education Funding in Elementary Schools'
+  },
+  subtitle: {
+    text: 'Source: <a href="https://www.southarts.org/wp-content/uploads/Arts-Education-in-the-South-Phase-I-Full-Report.pdf">South Arts</a>'
+  },
+  xAxis: {
+    categories: [
+      'Overall',
+      'Alabama',
+      'Florida',
+      'Georgia',
+      'Kentucky',
+      'Louisiana',
+      'Mississippi',
+      'North Carolina',
+      'South Carolina',
+      'Tennessee',
+    ],
+    crosshair: true
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: 'Percentage'
+    }
+  },
+  tooltip: {
+    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+      '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+    footerFormat: '</table>',
+    shared: true,
+    useHTML: true
+  },
+  plotOptions: {
+    column: {
+      pointPadding: 0.2,
+      borderWidth: 0
+    }
+  },
+  series: [{
+    name: 'PTA/PTO',
+    data: [41, 29, 44, 44, 46, 22, 33, 56, 52, 39]
+
+  }, {
+    name: 'District',
+    data: [38, 18, 45, 46, 35, 27, 33, 40, 55, 42]
+
+  }, {
+    name: 'School',
+    data: [26, 16, 33, 28, 40, 15, 18, 0, 39, 22]
+
+  }, {
+    name: 'Arts Fundraisers',
+    data: [21, 17, 25, 32, 21, 14, 22, 0, 32, 0]
+
+  }, {
+    name: 'Individual',
+    data: [15, 15, 19, 17, 0, 14, 18, 0, 0, 0]
+
+  }]
+});
+  </script>
+
+  <div id="container2">
+  </div>
+  <script>
+  Highcharts.chart('container2', {
+chart: {
+  type: 'column'
+},
+title: {
+  text: 'Main Sources of Arts Education Funding in Middle Schools'
+},
+subtitle: {
+  text: 'Source: <a href="https://www.southarts.org/wp-content/uploads/Arts-Education-in-the-South-Phase-I-Full-Report.pdf">South Arts</a>'
+},
+xAxis: {
+  categories: [
+    'Overall',
+    'Alabama',
+    'Florida',
+    'Georgia',
+    'Kentucky',
+    'Louisiana',
+    'Mississippi',
+    'North Carolina',
+    'South Carolina',
+    'Tennessee',
+  ],
+  crosshair: true
+},
+yAxis: {
+  min: 0,
+  title: {
+    text: 'Percentage'
+  }
+},
+tooltip: {
+  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+  pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+  footerFormat: '</table>',
+  shared: true,
+  useHTML: true
+},
+plotOptions: {
+  column: {
+    pointPadding: 0.2,
+    borderWidth: 0
+  }
+},
+series: [{
+  name: 'PTA/PTO',
+  data: [19, 17,26, 21, 0, 0, 0, 45, 37, 0]
+
+}, {
+  name: 'District',
+  data: [43, 25, 48, 57, 66, 36, 38, 43, 68, 0]
+
+}, {
+  name: 'School',
+  data: [33, 0, 38, 33, 42, 29, 0, 44, 41, 45]
+
+}, {
+  name: 'Arts Fundraisers',
+  data: [31, 32, 36, 43, 26, 29, 31, 0, 47, 30]
+
+}, {
+  name: 'Individual',
+  data: [0, 30, 21, 28, 0, 14, 19, 0, 0, 0]
+
+}]
+});
+</script>
+
+<div id="container3">
+</div>
+<script>
+Highcharts.chart('container3', {
+chart: {
+type: 'column'
+},
+title: {
+text: 'Main Sources of Arts Education Funding in High Schools'
+},
+subtitle: {
+text: 'Source: <a href="https://www.southarts.org/wp-content/uploads/Arts-Education-in-the-South-Phase-I-Full-Report.pdf">South Arts</a>'
+},
+xAxis: {
+categories: [
+  'Overall',
+  'Alabama',
+  'Florida',
+  'Georgia',
+  'Kentucky',
+  'Louisiana',
+  'Mississippi',
+  'North Carolina',
+  'South Carolina',
+  'Tennessee',
+],
+crosshair: true
+},
+yAxis: {
+min: 0,
+title: {
+  text: 'Percentage'
+}
+},
+tooltip: {
+headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+  '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+footerFormat: '</table>',
+shared: true,
+useHTML: true
+},
+plotOptions: {
+column: {
+  pointPadding: 0.2,
+  borderWidth: 0
+}
+},
+series: [{
+name: 'PTA/PTO',
+data: [0, 0, 0, 22, 0, 0, 0, 24, 0, 0]
+
+}, {
+name: 'District',
+data: [54, 24, 59, 68, 50, 57, 59, 0, 74, 45]
+
+}, {
+name: 'School',
+data: [36, 21, 45, 46, 45, 34, 0, 47, 42, 31]
+
+}, {
+name: 'Arts Fundraisers',
+data: [39, 40, 43, 48, 32, 32, 32, 0, 47, 60]
+
+}, {
+name: 'Individual',
+data: [31, 28, 37, 42, 21, 21, 41, 0, 32, 40]
+
+}]
+});
+</script>
+</div>
+
+    <div class="card-deck">
+
+  <div class="card2" style="width: 16rem;">
+      <img class="card-img-top" src="images/finalamericans.jpg" alt="Card image cap">
+      <div class="card-body">
+        <br>
+        <p class="card-text">Click the link to contribute to Americans for the Arts.
+          <a href="https://www.americansforthearts.org/support-americans-for-the-arts/donate-now" class="btn btn-primary">Be a Patron</a></p>
+      </div>
+    </div>
+
+    <div class="card2" style="width: 16rem;">
+    <img class="card-img-top" src="images/finalholland.jpg" alt="Mr. Holland's Opus website donation page">
+    <br>
+    <div class="card-body">
+      <br>
+      <p class="card-text">Click the link to contribute to The Mr. Holland's Opus Foundation.</p>
+        <a href="https://www.mhopus.org/donate/?utm_source=overlay&utm_medium=website&utm_campaign=eoyg" class="btn btn-primary">Be a Patron</a>
+    </div>
+  </div>
+
+  <div class="card2" style="width: 16rem;">
+    <img class="card-img-top" src="images/finalquinn.jpg" alt="Card image cap">
+    <div class="card-body">
+      <br>
+      <p class="card-text">Click the link to contribute to the Anthony Quinn Foundation.
+        <a href="https://aqfoundation.org" class="btn btn-primary">Be a Patron</a></p>
+    </div>
+  </div>
+
+  <div class="card2" style="width: 16rem;">
+    <img class="card-img-top" src="images/finalya.jpg" alt="Card image cap">
+    <div class="card-body">
+      <br>
+      <p class="card-text">Click the link to contribute to the National Youngarts Foundation.
+        <a href="https://www.youngarts.org/donate" class="btn btn-primary">Be a Patron</a></p>
+    </div>
+  </div>
+
+  <div class="card2" style="width: 16rem;">
+    <img class="card-img-top" src="images/finalnasaa.jpg" alt="Card image cap">
+    <div class="card-body">
+      <br>
+      <p class="card-text">Click the link to contribute to the National Assembly of State Arts Agencies.
+        <a href="https://nasaa-arts.org/support/" class="btn btn-primary">Be a Patron</a></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<button type="button" class="credits">Click me for image credits</button>
+  <div class="image_credits">
+    <p> All images used were in the public domain.</p>
+      <ul>
+        <li><a href="https://www.pexels.com/photo/multicolored-abstract-painting-935785/">Carousel Image 1</a> </li>
+        <li><a href="https://www.pexels.com/photo/analogue-black-blur-close-up-371836/">Carousel Image 2</a></li>
+        <li><a href="https://www.pexels.com/photo/ancient-architecture-aspendos-building-165173/">Carousel Image 3</a> </li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg">Van Gogh's Sunflowers: </a>This image is in the <a href="https://commons.wikimedia.org/wiki/Commons:Copyright_tags#United_States">US public domain</a> as well.  </li>
+        <li> En Pointe: This image was captured and published by Petar Milošević and used under the <a href="https://commons.wikimedia.org/wiki/File:Ballet_shoes_(Russian_ballet_school_М._Исаева).jpg">Creative Commons license.</a></li>
+        <li> <a href="https://commons.wikimedia.org/wiki/File:Beethoven.jpg">Beethoven: </a>This image is in <a href="https://commons.wikimedia.org/wiki/Commons:Copyright_tags#United_States"> the US public domain</a> as well. </li>
+      </ul>
+  </div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/project.js"></script>
+
+
+<footer>
+  <p class="footer">This final project was created for JOU3363: Intro to Web Apps for Communicators at the University of Florida by Hannah Beatty</p>
+ </footer>
+</body>
+
+
+</html>
